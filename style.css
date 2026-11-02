@@ -443,6 +443,11 @@ html[data-theme="dark"] .theme-btn .icon-moon { display: none; }
 
 .project-media a { display: block; border-radius: var(--radius); }
 
+/* A wide diagram reads better full width under the text */
+.project-wide { grid-template-columns: 1fr; }
+.project-wide .project-text { max-width: 46rem; }
+.project-wide .project-media { position: static; }
+
 .project-stats {
   background: var(--surface);
   border: 1px solid var(--rule);

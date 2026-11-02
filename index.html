@@ -201,8 +201,8 @@
           </figure>
         </article>
 
-        <!-- SFlowGCN -->
-        <article class="project">
+        <!-- SFlowGCN (wide diagram shown full width below the text) -->
+        <article class="project project-wide">
           <div class="project-text">
             <h3 class="project-name">SFlowGCN</h3>
             <p class="project-tagline">Low-rate flow table overflow attack detection in SDN <span class="project-date">Sep 2025 – Apr 2026</span></p>
@@ -211,20 +211,21 @@
               <li>Achieved 96.47% accuracy, 99.69% ROC-AUC and 95.30% TPR, outperforming KNN, GRU, LSTM and EGST baselines.</li>
               <li>Reduced flow table overflow by 83.4% and Packet-In messages by 63.6% in live deployment, at 0.005 ms inference latency.</li>
             </ul>
+            <dl class="figures">
+              <div><dt>Accuracy</dt><dd>96.47%</dd></div>
+              <div><dt>ROC-AUC</dt><dd>99.69%</dd></div>
+              <div><dt>Overflow reduced</dt><dd>83.4%</dd></div>
+              <div><dt>Inference</dt><dd>0.005 ms</dd></div>
+            </dl>
             <ul class="chips" aria-label="Tech stack">
               <li>PyTorch Geometric</li><li>Mininet</li><li>Ryu SDN Controller</li>
             </ul>
           </div>
-          <div class="project-media project-stats">
-            <dl class="figures figures-large">
-              <div><dt>Accuracy</dt><dd>96.47%</dd></div>
-              <div><dt>ROC-AUC</dt><dd>99.69%</dd></div>
-              <div><dt>Flow table overflow reduced</dt><dd>83.4%</dd></div>
-              <div><dt>Packet-In messages reduced</dt><dd>63.6%</dd></div>
-              <div><dt>Inference latency</dt><dd>0.005 ms</dd></div>
-              <div><dt>Packet records</dt><dd>1.17M+</dd></div>
-            </dl>
-          </div>
+          <figure class="project-media">
+            <a href="SFlowGCN.png" target="_blank" rel="noopener">
+              <img src="SFlowGCN.png" alt="SFlowGCN architecture: traffic capture and preprocessing, 15-feature engineering, graph construction over 200-packet windows, and GCN-based classification with live mitigation" width="1341" height="548" loading="lazy" />
+            </a>
+          </figure>
         </article>
 
         <!-- QA Bot -->
