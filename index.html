@@ -3,394 +3,390 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matam Padmini — AI & Data Science</title>
+  <title>Matam Padmini | AI &amp; Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Matam Padmini, AI and Machine Learning engineer with experience in LLM evaluation, RAG, graph neural networks and real-time web apps." />
+  <meta property="og:title" content="Matam Padmini | AI &amp; Machine Learning Engineer" />
+  <meta property="og:description" content="Projects, experience and resume of Matam Padmini." />
+  <meta property="og:url" content="https://padmini-matam.github.io/Portfolio-/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F5F8B'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E" />
+
+  <!-- Apply the saved or system theme before the page paints, so there is no flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- NAV -->
-  <nav class="nav">
-    <span class="nav-logo">MP</span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">☀️</button></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-bg">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="grid-overlay"></div>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-name">Matam Padmini</a>
+      <nav aria-label="Sections">
+        <ul class="nav-links">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch to dark theme">
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
     </div>
-    <div class="hero-content">
-      <div class="hero-profile">
-        <img src="profile.jpeg" alt="Matam Padmini" class="hero-img" id="profileImg" onerror="this.src='https://ui-avatars.com/api/?name=Matam+Padmini&background=7c6af7&color=fff&size=150'" />
-      </div>
-      <p class="hero-tag">AI & Data Science Graduate</p>
-      <h1 class="hero-name">Matam <em>Padmini</em></h1>
-      <p class="hero-sub">
-        Recent AI & Data Science graduate with hands-on experience in Graph Neural Networks, NLP, and ML pipelines. 
-        Proven ability to build and deploy end-to-end ML systems with measurable impact. 
-        Seeking roles in AI/ML engineering, data science, or research.
-      </p>
-      <div class="hero-badges">
-        <span class="badge">CGPA 9.33</span>
-        <span class="badge">IIT Hyderabad Research</span>
-        <span class="badge">Deccan AI</span>
-      </div>
-      <div class="hero-cta">
-        <a href="resume.pdf" target="_blank" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Resume
-        </a>
-        <a href="https://github.com/Padmini-Matam" target="_blank" class="btn btn-outline">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/padmini-matam-27a323297/" target="_blank" class="btn btn-outline">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn
-        </a>
-        <a href="mailto:matamp1375@gmail.com" class="btn btn-outline">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Email
-        </a>
-      </div>
-    </div>
+  </header>
 
-  </section>
+  <main id="main">
 
-  <!-- EDUCATION -->
-  <section class="section section-alt" id="education">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-      <div class="timeline">
-
-        <div class="timeline-item" data-delay="0">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>B.E. in Artificial Intelligence & Data Science</h3>
-                <p class="timeline-org">Stanley College of Engineering and Technology for Women</p>
-              </div>
-              <span class="timeline-date">2026</span>
-            </div>
-            <ul class="timeline-body">
-              <li><strong>CGPA:</strong> 9.33</li>
-            </ul>
-          </div>
+    <!-- HERO -->
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <p class="hero-role">AI &amp; Machine Learning Engineer</p>
+        <h1 class="hero-name">Matam Padmini</h1>
+        <p class="hero-sub">
+          I build and evaluate AI systems: retrieval pipelines, graph neural networks, LLM agents and real-time
+          web apps. B.E. in Artificial Intelligence and Data Science, currently working on RLHF and LLM evaluation at Deccan AI.
+        </p>
+        <div class="hero-cta">
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download resume
+          </a>
+          <a href="https://github.com/Padmini-Matam" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+          <a href="https://www.linkedin.com/in/padmini-matam-27a323297/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="mailto:matamp1375@gmail.com" class="btn btn-outline">Email</a>
         </div>
-
-        <div class="timeline-item" data-delay="1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>XII (TELANGANA)</h3>
-                <p class="timeline-org">Sri Chaitanya Junior College</p>
-              </div>
-              <span class="timeline-date">2022</span>
-            </div>
-            <ul class="timeline-body">
-              <li><strong>Marks:</strong> 96.80%</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-delay="2">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>X (TELANGANA)</h3>
-                <p class="timeline-org">Sri Sai Krishna Talent School</p>
-              </div>
-              <span class="timeline-date">2020</span>
-            </div>
-            <ul class="timeline-body">
-              <li><strong>Marks:</strong> 100%</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
+      <div class="hero-side">
+        <img src="profile.jpeg" alt="Portrait of Matam Padmini" class="hero-img" width="200" height="200"
+             onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Matam+Padmini&background=1F5F8B&color=fff&size=200'" />
+        <dl class="facts">
+          <div><dt>Now</dt><dd>AI Operations Associate, Deccan AI</dd></div>
+          <div><dt>Research</dt><dd>R&amp;D Intern, IIT Hyderabad</dd></div>
+          <div><dt>Degree</dt><dd>B.E. AI &amp; DS, CGPA 9.36</dd></div>
+          <div><dt>Based in</dt><dd>Hyderabad, India</dd></div>
+        </dl>
+      </div>
+    </section>
 
-        <div class="timeline-item" data-delay="0">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-body">
+
+          <article class="entry">
+            <header class="entry-head">
               <div>
-                <h3>Operations Associate Intern</h3>
-                <p class="timeline-org">Deccan AI <br/><em>AI Product Quality Operations</em></p>
+                <h3>AI Operations Associate</h3>
+                <p class="entry-org">Deccan AI, AI Product Quality Operations</p>
               </div>
-              <span class="timeline-date">Oct 2025 – Apr 2026</span>
-            </div>
-            <ul class="timeline-body">
-              <li>Evaluated and refined AI model outputs through prompt engineering and structured data annotation, improving consistency of delivered software outputs.</li>
-              <li>Coordinated annotation workflows across multiple concurrent projects, maintaining quality standards and turnaround consistency.</li>
+              <p class="entry-date">Oct 2025 – Present</p>
+            </header>
+            <ul class="entry-list">
+              <li>Coordinated end-to-end AI/ML data projects, assigning tasks to freelancers by skill set and workload and tracking productivity, turnaround time and progress to meet deadlines and quality targets.</li>
+              <li>Shared guidelines and updates with freelancers and internal teams, gave specific feedback, and coordinated rework to improve accuracy and consistency.</li>
+              <li>Worked on RLHF pipelines, writing complex prompts and evaluating and annotating LLM outputs across text, code, image and video projects, including VFX stylization.</li>
+              <li>Owned prompt design, revision and quality review for an ML research project alongside a small team, creating adversarial prompts that expose model weaknesses and gold-standard answer sets for each task.</li>
+              <li>Quality-checked prompts and answer sets against source documents, recomputing figures to catch calculation, rounding and unit errors and flagging guideline deviations before delivery.</li>
+              <li>Validated automated verifier checks by inspecting output files (workbooks, memos, PDFs) with Python, separating real model failures from faulty checks and correcting checks that mis-scored valid outputs.</li>
             </ul>
-            <div class="tag-row">
-              <span class="tag">RLHF</span><span class="tag">LLM Evaluation</span><span class="tag">Annotation</span>
-            </div>
-          </div>
-        </div>
+            <ul class="chips" aria-label="Focus areas">
+              <li>RLHF</li><li>LLM evaluation</li><li>Prompt engineering</li><li>Quality assurance</li><li>Python</li>
+            </ul>
+          </article>
 
-        <div class="timeline-item" data-delay="1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
+          <article class="entry">
+            <header class="entry-head">
               <div>
                 <h3>Research and Development Intern</h3>
-                <p class="timeline-org">IIT Hyderabad <br/><em>Air Pollution & Climate Change Modeling</em></p>
+                <p class="entry-org">IIT Hyderabad, Air Pollution and Climate Change Modeling</p>
               </div>
-              <span class="timeline-date">May 2025 – Aug 2025</span>
-            </div>
-            <ul class="timeline-body">
-              <li>Built predictive models for air pollution and climate trends using raw CSV station data from Delhi and Chennai; performed preprocessing, EDA, and visualization in Python.</li>
-              <li>Applied Spearman correlation, Mann-Kendall trend tests, and stationarity tests to derive actionable climate insights.</li>
+              <p class="entry-date">May 2025 – Aug 2025</p>
+            </header>
+            <ul class="entry-list">
+              <li>Built predictive models for air pollution and climate trends using raw CSV station data from Delhi and Chennai; performed preprocessing, EDA and visualization in Python.</li>
+              <li>Applied Spearman correlation, Mann-Kendall trend tests and stationarity tests to derive actionable climate insights.</li>
               <li>Delivered findings through structured documentation, directly supporting faculty-led climate modeling research at IIT Hyderabad.</li>
             </ul>
-            <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">EDA</span><span class="tag">Climate ML</span>
-            </div>
-          </div>
+            <ul class="chips" aria-label="Focus areas">
+              <li>Python</li><li>EDA</li><li>Time-series analysis</li><li>Climate modeling</li>
+            </ul>
+          </article>
+
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section class="section section-alt" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
+    <!-- PROJECTS -->
+    <section class="section section-soft" id="projects">
+      <div class="wrap">
+        <h2 class="section-title section-title-wide">Projects</h2>
 
-        <div class="project-card featured">
-          <div class="project-accent"></div>
-          <div class="project-inner">
-            <div class="project-top">
-              <span class="project-label">Featured · Jun 2026</span>
-              <h3>TalentScout AI</h3>
-              <p class="project-tagline">AI Talent Scouting & Engagement Agent</p>
-            </div>
-            <img src="Talent Scout Agent Architecture.png" alt="Talent Scout Agent Architecture" class="project-img" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <!-- Missing Piece -->
+        <article class="project">
+          <div class="project-text">
+            <h3 class="project-name">Missing Piece</h3>
+            <p class="project-tagline">Real-time co-op study game for 2–8 players</p>
             <p class="project-desc">
-              Designed an end-to-end agentic recruitment pipeline automating candidate sourcing, evaluation, AI-to-AI outreach simulation, and shortlist reporting with CSV, JSON, and PDF export.<br/><br/>
-              Engineered a hybrid ranking engine combining skill overlap, experience, and semantic similarity; integrated a radar chart visualization, GitHub profile importer, and human-in-the-loop recruiter chat.<br/><br/>
-              Added a Fairness Audit module that flags gender-proxy and location-tier score disparities, improving ranking transparency.
+              Everyone joins from their own phone and gets different fact cards for the same question. Nobody can answer
+              alone, so the team shares what they know, votes in secret and agrees before time runs out. The design is based
+              on the jigsaw method teachers use to get every student participating: each needed card rules out at least one wrong answer.
             </p>
-            <div class="tag-row">
-              <span class="tag">Groq Llama 3</span><span class="tag">Sentence-Transformers</span><span class="tag">Streamlit</span>
-            </div>
+            <ul class="project-list">
+              <li>Real-time multiplayer over WebSockets on Cloudflare Workers, with one Durable Object per room (SQLite-backed) as the single source of truth. Each player only ever receives their own cards, and answers stay hidden until the reveal.</li>
+              <li>Built for real phones: automatic reconnect, a 60-second grace period that keeps your cards, a 10-minute seat hold, late joiners and host hand-over. Includes solo mode with two bot teammates and custom question packs with validation.</li>
+              <li>Game rules live in <code>game.mjs</code>, separate from networking in <code>worker.mjs</code>, and are covered by game-flow tests on Node’s built-in test runner.</li>
+              <li>Built in four days with ChatGPT (Codex) for the Handshake AI Skills Studio x OpenAI Multiplayer Game Challenge. I wrote the requirements, approved the plan, tested every milestone across phones and browsers, and directed each fix.</li>
+              <li>Playtesting drove the design: after a first game where nobody shared cards (2/6), I added one-tap sharing and moved chat under the cards; by the third playtest the team scored 4/6.</li>
+            </ul>
+            <dl class="figures">
+              <div><dt>Players</dt><dd>2–8</dd></div>
+              <div><dt>Build time</dt><dd>4 days</dd></div>
+              <div><dt>Playtest score</dt><dd>2/6 to 4/6</dd></div>
+            </dl>
+            <ul class="chips" aria-label="Tech stack">
+              <li>Cloudflare Workers</li><li>Durable Objects</li><li>WebSockets</li><li>Vanilla JavaScript</li><li>Node test runner</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://missing-piece-game.padmini-m.workers.dev" target="_blank" rel="noopener" class="text-link">Play the game</a>
+            </p>
           </div>
-        </div>
+          <figure class="project-media">
+            <a href="Missing_Piece.png" target="_blank" rel="noopener">
+              <img src="Missing_Piece.png" alt="Missing Piece landing screen next to two phones showing the same question with different fact cards" width="1800" height="1200" loading="lazy" />
+            </a>
+          </figure>
+        </article>
 
-        <div class="project-card">
-          <div class="project-inner">
-            <div class="project-top">
-              <span class="project-label">Jan 2026 – Apr 2026</span>
-              <h3>SFlowGCN</h3>
-              <p class="project-tagline">Low-Rate Flow Table Overflow Attack Detection in SDN</p>
-            </div>
-            <p class="project-desc">
-              Built a real-time graph neural network attack-detection system on an SDN testbed, processing 1.17M+ packet records with a 15-dimensional, 6-feature LFTO-specific node vector.<br/><br/>
-              Achieved 96.47% accuracy, 99.69% ROC-AUC, and 95.30% TPR, outperforming KNN, GRU, LSTM, and EGST baselines.<br/><br/>
-              Reduced flow table overflow by 83.4% and Packet-In messages by 63.6% in live deployment, at 0.005ms inference latency.
+        <!-- TalentScout AI -->
+        <article class="project">
+          <div class="project-text">
+            <h3 class="project-name">TalentScout AI</h3>
+            <p class="project-tagline">AI talent scouting and engagement agent <span class="project-date">Jun 2026</span></p>
+            <ul class="project-list">
+              <li>Designed an end-to-end agentic recruitment pipeline that automates candidate sourcing, evaluation, AI-to-AI outreach simulation and shortlist reporting, with CSV, JSON and PDF export.</li>
+              <li>Engineered a hybrid ranking engine combining skill overlap, experience and semantic similarity; integrated a radar chart visualization, GitHub profile importer and human-in-the-loop recruiter chat.</li>
+              <li>Added a Fairness Audit module that flags gender-proxy and location-tier score disparities, improving ranking transparency.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech stack">
+              <li>Groq Llama 3</li><li>Sentence-Transformers</li><li>Streamlit</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://talentscoutai-afvn48jb9jjyr6mlojxmwn.streamlit.app/" target="_blank" rel="noopener" class="text-link">Live demo</a>
+              <a href="https://github.com/Padmini-Matam/TalentscoutAI" target="_blank" rel="noopener" class="text-link">Source code</a>
             </p>
-            <div class="project-metrics">
-              <div class="metric"><span class="metric-val">96.47%</span><span class="metric-lbl">Accuracy</span></div>
-              <div class="metric"><span class="metric-val">83.4%</span><span class="metric-lbl">Overflow Reduced</span></div>
-              <div class="metric"><span class="metric-val">0.005ms</span><span class="metric-lbl">Inference</span></div>
-            </div>
-            <div class="tag-row">
-              <span class="tag">PyTorch Geometric</span><span class="tag">Mininet</span><span class="tag">Ryu SDN</span>
-            </div>
           </div>
-        </div>
+          <figure class="project-media">
+            <a href="Talent Scout Agent Architecture.png" target="_blank" rel="noopener">
+              <img src="Talent Scout Agent Architecture.png" alt="TalentScout AI architecture: inputs, agentic core, LLM providers and outputs" width="1536" height="1024" loading="lazy" />
+            </a>
+          </figure>
+        </article>
 
-        <div class="project-card">
-          <div class="project-inner">
-            <div class="project-top">
-              <span class="project-label">Feb 2025 – May 2025</span>
-              <h3>QA Bot</h3>
-              <p class="project-tagline">RAG-Based PDF Question Answering System</p>
-            </div>
-            <img src="workflow.png" alt="QA Bot Workflow" class="project-img" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
-            <p class="project-desc">
-              Built a production-ready RAG pipeline with per-session in-memory vector indexing for complete user isolation; deployed on Hugging Face Spaces with encrypted credential management.<br/><br/>
-              Achieved a 97% exact match rate, 0.9862 F1 score, and 0.9936 semantic similarity, outperforming a TF-IDF baseline by 35.8% on exact match rate.<br/><br/>
-              Open-sourced the project on GitHub under the MIT License.
-            </p>
-            <div class="project-metrics">
-              <div class="metric"><span class="metric-val">97%</span><span class="metric-lbl">Exact Match</span></div>
-              <div class="metric"><span class="metric-val">0.9862</span><span class="metric-lbl">F1 Score</span></div>
-            </div>
-            <div class="tag-row">
-              <span class="tag">IBM Watsonx</span><span class="tag">LangChain</span><span class="tag">ChromaDB</span>
-            </div>
+        <!-- SFlowGCN -->
+        <article class="project">
+          <div class="project-text">
+            <h3 class="project-name">SFlowGCN</h3>
+            <p class="project-tagline">Low-rate flow table overflow attack detection in SDN <span class="project-date">Sep 2025 – Apr 2026</span></p>
+            <ul class="project-list">
+              <li>Built a real-time graph neural network attack-detection system on an SDN testbed, processing 1.17M+ packet records with a 15-dimensional, 6-feature LFTO-specific node vector.</li>
+              <li>Achieved 96.47% accuracy, 99.69% ROC-AUC and 95.30% TPR, outperforming KNN, GRU, LSTM and EGST baselines.</li>
+              <li>Reduced flow table overflow by 83.4% and Packet-In messages by 63.6% in live deployment, at 0.005 ms inference latency.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech stack">
+              <li>PyTorch Geometric</li><li>Mininet</li><li>Ryu SDN Controller</li>
+            </ul>
           </div>
-        </div>
+          <div class="project-media project-stats">
+            <dl class="figures figures-large">
+              <div><dt>Accuracy</dt><dd>96.47%</dd></div>
+              <div><dt>ROC-AUC</dt><dd>99.69%</dd></div>
+              <div><dt>Flow table overflow reduced</dt><dd>83.4%</dd></div>
+              <div><dt>Packet-In messages reduced</dt><dd>63.6%</dd></div>
+              <div><dt>Inference latency</dt><dd>0.005 ms</dd></div>
+              <div><dt>Packet records</dt><dd>1.17M+</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- QA Bot -->
+        <article class="project">
+          <div class="project-text">
+            <h3 class="project-name">QA Bot</h3>
+            <p class="project-tagline">RAG-based PDF question answering system <span class="project-date">Feb 2025 – May 2025</span></p>
+            <ul class="project-list">
+              <li>Built a production-ready RAG pipeline with per-session in-memory vector indexing for complete user isolation; deployed on Hugging Face Spaces with encrypted credential management.</li>
+              <li>Achieved a 0.4673 F1 score and 0.7130 semantic similarity across a 24-question evaluation spanning three document types, with sub-13 s average end-to-end latency.</li>
+              <li>Open-sourced the project on GitHub under the MIT License.</li>
+            </ul>
+            <dl class="figures">
+              <div><dt>F1 score</dt><dd>0.4673</dd></div>
+              <div><dt>Semantic similarity</dt><dd>0.7130</dd></div>
+              <div><dt>Avg. latency</dt><dd>&lt;13 s</dd></div>
+            </dl>
+            <ul class="chips" aria-label="Tech stack">
+              <li>Groq API (Llama-3.3 70B)</li><li>HuggingFace Embeddings</li><li>LangChain</li><li>ChromaDB</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://huggingface.co/spaces/Padmini1/queryvault" target="_blank" rel="noopener" class="text-link">Live demo</a>
+              <a href="https://github.com/Padmini-Matam/QA-Bot" target="_blank" rel="noopener" class="text-link">Source code</a>
+            </p>
+          </div>
+          <figure class="project-media">
+            <a href="workflow.png" target="_blank" rel="noopener">
+              <img src="workflow.png" alt="QA Bot workflow: documents are split, embedded and stored in a vector database that the LLM searches to answer questions" width="1797" height="875" loading="lazy" />
+            </a>
+          </figure>
+        </article>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS & ACHIEVEMENTS -->
-  <section class="section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills & Achievements</h2>
-      <div class="skills-grid">
-
-        <div class="skill-group">
-          <h4>Languages & Tools</h4>
-          <div class="skill-pills">
-            <span class="pill pill-blue">Python</span>
-            <span class="pill pill-blue">SQL</span>
-            <span class="pill pill-blue">C</span>
-            <span class="pill pill-blue">Jupyter Notebook</span>
-            <span class="pill pill-blue">VS Code</span>
-            <span class="pill pill-blue">GitHub</span>
-            <span class="pill pill-blue">Google Colab</span>
-            <span class="pill pill-blue">Gradio</span>
-            <span class="pill pill-blue">Streamlit</span>
-            <span class="pill pill-blue">IBM Watsonx</span>
-            <span class="pill pill-blue">Plotly</span>
-          </div>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-body">
+          <dl class="skill-rows">
+            <div>
+              <dt>Languages</dt>
+              <dd><ul class="chips"><li>Python</li><li>SQL</li><li>R</li><li>C</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></dd>
+            </div>
+            <div>
+              <dt>Libraries &amp; frameworks</dt>
+              <dd><ul class="chips"><li>scikit-learn</li><li>TensorFlow</li><li>PyTorch</li><li>PyTorch Geometric</li><li>NetworkX</li><li>Pandas</li><li>NumPy</li><li>LangChain</li><li>ChromaDB</li><li>Streamlit</li><li>Gradio</li><li>Plotly</li><li>Sentence Transformers</li></ul></dd>
+            </div>
+            <div>
+              <dt>Tools &amp; platforms</dt>
+              <dd><ul class="chips"><li>Jupyter Notebook</li><li>VS Code</li><li>Git</li><li>GitHub</li><li>Google Colab</li><li>Groq</li><li>Hugging Face Spaces</li><li>Cloudflare Workers</li></ul></dd>
+            </div>
+            <div>
+              <dt>Machine learning &amp; AI</dt>
+              <dd><ul class="chips"><li>Deep Learning</li><li>CNN</li><li>RNN</li><li>GCN</li><li>GAT</li><li>Transfer Learning</li><li>RAG</li><li>RLHF</li><li>LLMs</li><li>NLP</li><li>Prompt Engineering</li><li>Feature Engineering</li><li>Model Evaluation</li><li>Vector Databases</li></ul></dd>
+            </div>
+            <div>
+              <dt>Core CS</dt>
+              <dd><ul class="chips"><li>Software-Defined Networking</li><li>Mininet</li><li>Ryu SDN Controller</li><li>Open vSwitch</li><li>sFlow</li><li>Computer Networks</li><li>Data Structures &amp; Algorithms</li><li>DBMS</li><li>OOP</li><li>Data Analytics</li><li>Quality Assurance</li></ul></dd>
+            </div>
+          </dl>
         </div>
-
-        <div class="skill-group">
-          <h4>Libraries & Frameworks</h4>
-          <div class="skill-pills">
-            <span class="pill pill-teal">Scikit-learn</span>
-            <span class="pill pill-teal">TensorFlow</span>
-            <span class="pill pill-teal">PyTorch</span>
-            <span class="pill pill-teal">PyTorch Geometric</span>
-            <span class="pill pill-teal">NetworkX</span>
-            <span class="pill pill-teal">Pandas</span>
-            <span class="pill pill-teal">NumPy</span>
-            <span class="pill pill-teal">LangChain</span>
-            <span class="pill pill-teal">ChromaDB</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4>ML & AI Techniques</h4>
-          <div class="skill-pills">
-            <span class="pill pill-amber">CNNs</span>
-            <span class="pill pill-amber">RNNs</span>
-            <span class="pill pill-amber">GCN</span>
-            <span class="pill pill-amber">GAT</span>
-            <span class="pill pill-amber">Transfer Learning</span>
-            <span class="pill pill-amber">RAG</span>
-            <span class="pill pill-amber">RLHF</span>
-            <span class="pill pill-amber">LLMs</span>
-            <span class="pill pill-amber">NLP</span>
-            <span class="pill pill-amber">Feature Engineering</span>
-            <span class="pill pill-amber">Model Evaluation</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4>SDN, Networking & Core CS</h4>
-          <div class="skill-pills">
-            <span class="pill pill-purple">Mininet</span>
-            <span class="pill pill-purple">Ryu SDN Controller</span>
-            <span class="pill pill-purple">Open vSwitch</span>
-            <span class="pill pill-purple">sFlow</span>
-            <span class="pill pill-purple">Computer Networks</span>
-            <span class="pill pill-purple">DBMS</span>
-            <span class="pill pill-purple">OOP</span>
-            <span class="pill pill-purple">Data Analytics</span>
-            <span class="pill pill-purple">R (Basics)</span>
-          </div>
-        </div>
-
-        <div class="skill-group" style="grid-column: 1 / -1;">
-          <h4>Achievements & Certifications</h4>
-          <div class="cert-list">
-            <div class="cert-item">
-              <span class="cert-dot"></span>
-              <span>Secured 3rd Place at the ACM-W Hackathon for a career recommendation system built with HTML, CSS, and JavaScript.</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-dot"></span>
-              <span>Built a CNN model with transfer learning, achieving 90% accuracy at the GDSC Hackathon, competing among 50+ teams.</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-dot"></span>
-              <span>Google Data Analytics Professional Certificate — Coursera.</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-dot"></span>
-              <span>AI Fluency: Framework and Foundations — Anthropic.</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-dot"></span>
-              <span>OOPS using Java & SQL for Data Science — Great Learning.</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-dot"></span>
-              <span>WE-Hub IDEATHON-2.0 — Idea Validation.</span>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="section section-contact" id="contact">
-    <div class="container container-narrow">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="contact-sub">
-        I'm open to research collaborations, internship opportunities, and interesting conversations
-        about AI, graph networks, or SDN security.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:matamp1375@gmail.com" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          matamp1375@gmail.com
-        </a>
-        <a href="tel:+919948676109" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.52 2 2 0 0 1 3.59 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.88-.88a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.9z"/></svg>
-          +91 99486 76109
-        </a>
-        <a href="https://github.com/Padmini-Matam" target="_blank" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          github.com/Padmini-Matam
-        </a>
-        <a href="https://www.linkedin.com/in/padmini-matam-27a323297/" target="_blank" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          linkedin.com/in/padmini-matam
-        </a>
+    <!-- EDUCATION -->
+    <section class="section section-soft" id="education">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Education</h2>
+        <div class="section-body">
+
+          <article class="entry entry-compact">
+            <header class="entry-head">
+              <div>
+                <h3>Bachelor of Engineering in Artificial Intelligence and Data Science</h3>
+                <p class="entry-org">Stanley College of Engineering and Technology for Women, Hyderabad</p>
+              </div>
+              <p class="entry-date">2022 – 2026</p>
+            </header>
+            <p class="entry-note">CGPA 9.36 / 10</p>
+          </article>
+
+          <article class="entry entry-compact">
+            <header class="entry-head">
+              <div>
+                <h3>Intermediate (Telangana State Board)</h3>
+                <p class="entry-org">Sri Chaitanya Junior College</p>
+              </div>
+              <p class="entry-date">2020 – 2022</p>
+            </header>
+            <p class="entry-note">96.80%</p>
+          </article>
+
+          <article class="entry entry-compact">
+            <header class="entry-head">
+              <div>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p class="entry-org">Sri Sai Krishna Talent School</p>
+              </div>
+              <p class="entry-date">2019 – 2020</p>
+            </header>
+            <p class="entry-note">100%</p>
+          </article>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+    <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+    <section class="section" id="achievements">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Achievements</h2>
+        <div class="section-body two-col">
+          <div>
+            <h3 class="sub-title">Hackathons</h3>
+            <ul class="plain-list">
+              <li>3rd place at the ACM-W Hackathon for a career recommendation system built with HTML, CSS and JavaScript. <a href="https://github.com/Padmini-Matam/Next-Step-" target="_blank" rel="noopener" class="text-link">Source code</a></li>
+              <li>Built a CNN model with transfer learning reaching 90% accuracy at the GDSC Hackathon, among 50+ teams. <a href="https://github.com/Padmini-Matam/Metastatic-Cancer-Detection" target="_blank" rel="noopener" class="text-link">Source code</a></li>
+              <li>Participated in the Catalyst Hackathon organized by Deccan AI Experts.</li>
+              <li>Built Missing Piece for the Handshake AI Skills Studio x OpenAI Multiplayer Game Challenge.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="sub-title">Certifications</h3>
+            <ul class="plain-list">
+              <li>Google Data Analytics Professional Certificate, Coursera</li>
+              <li>AI Fluency: Framework and Foundations, Anthropic</li>
+              <li>Object-Oriented Programming using Java and SQL for Data Science, Great Learning</li>
+              <li>WE-Hub IDEATHON-2.0, Idea Validation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-contact" id="contact">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Contact</h2>
+        <div class="section-body">
+          <p class="contact-sub">
+            I’m looking for roles in AI/ML engineering, data science and research, and I’m always happy to talk about
+            LLM evaluation, RAG systems or graph networks.
+          </p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:matamp1375@gmail.com">matamp1375@gmail.com</a></li>
+            <li><span>Phone</span><a href="tel:+919948676109">+91 99486 76109</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/padmini-matam-27a323297/" target="_blank" rel="noopener">linkedin.com/in/padmini-matam</a></li>
+            <li><span>GitHub</span><a href="https://github.com/Padmini-Matam" target="_blank" rel="noopener">github.com/Padmini-Matam</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <p>Designed & built by Matam Padmini · 2026</p>
+    <div class="wrap footer-inner">
+      <p>© 2026 Matam Padmini</p>
+      <a href="#top" class="text-link">Back to top</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
